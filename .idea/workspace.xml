@@ -311,13 +311,21 @@
       <option name="presentableId" value="Default" />
       <updated>1488909805930</updated>
       <workItem from="1488909810539" duration="282000" />
+<<<<<<< HEAD
       <workItem from="1488910435260" duration="1038000" />
       <workItem from="1488912919468" duration="1369000" />
+=======
+      <workItem from="1488910435260" duration="1637000" />
+>>>>>>> origin/master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="2689000" />
+=======
+    <option name="totallyTimeSpent" value="1919000" />
+>>>>>>> origin/master
   </component>
   <component name="ToolWindowManager">
     <frame x="1483" y="0" width="1408" height="1631" extended-state="0" />
