@@ -14,7 +14,11 @@ module.exports = {
     },
     idNoticias:{
       model:"Noticias"
+    },
+    idDeporte:{
+      model:"Deporte"
     }
+
   }
 };
 

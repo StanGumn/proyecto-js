@@ -1,3 +1,86 @@
-<p>
-  deporte works!
-</p>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{title}}</h3>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <form class="animated bounceIn" (ngSubmit)="crearDeporte(NuevoDeporteForm)" #NuevoDeporteForm="ngForm">
+        <div class="form-group">
+          <label>Deporte</label>
+          <input required
+                 minlength="4"
+                 type="text"
+                 class="form-control"
+                 placeholder="Ingrese el nombre del deporte"
+                 name="nombreDeporte"
+                 [(ngModel)]="nuevoDeporte.nombreDeporte"
+                 #nombreDeporte="ngModel"
+                 #nombreElm>
+        </div>
+        <button [disabled]="disabledButtons.NuevoDeporteFormSubmitButton||!NuevoDeporteForm.valid" type="submit"
+                class="btn btn-block btn-success">Crear
+        </button>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <h1>{{nuevoDeporte.nombreDeporte}}</h1>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm-12 animated flipInX" *ngFor="let deporte of deportes">
+      <div class="text-center">
+        <h3> Nombre: {{deporte.nombreDeporte}}</h3>
+      </div>
+      <div class="row animated flipInY" [hidden]="!deporte.formularioCerrado">
+        <div class="col-sm-5">
+          <button class="btn btn-block btn-info"
+                  (click)="deporte.formularioCerrado = !grupo.formularioCerrado"
+          >Actualizar
+          </button>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+          <button class="btn btn-block btn-danger" (click)="borrarDeporte(deporte.id)">Borrar</button>
+        </div>
+        <div class="col-sm-12">
+          <a [routerLink]="[deporte.id,'noticias']">Ir a Noticias</a>
+        </div>
+      </div>
+      <div class="div" [hidden]="deporte.formularioCerrado">
+        <form action="">
+          <form class="animated bounceIn" (ngSubmit)="actualizarDeporte(deporte)" #NuevoGrupoForm="ngForm">
+            <div class="form-group">
+              <label>Deporte</label>
+              <input required
+                     minlength="4"
+                     type="text"
+                     class="form-control"
+                     placeholder="Ingrese el nombre del deporte"
+                     name="nombreDeporte"
+                     [(ngModel)]="deporte.nombreDeporte"
+                     #nombreDeporte="ngModel"
+                     #nombreElm>
+            </div>
+            <button [disabled]="disabledButtons.NuevoDeporteFormSubmitButton||!NuevoDeporteForm.valid" type="submit"
+                    class="btn btn-block btn-success">Update
+            </button>
+            <button type="button"
+                    class="btn btn-block btn-warning"
+                    (click)="deporte.formularioCerrado = !deporte.formularioCerrado"
+            >
+              Cancelar
+            </button>
+          </form>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!--<router-outlet></router-outlet>-->
+

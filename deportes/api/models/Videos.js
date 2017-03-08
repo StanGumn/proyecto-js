@@ -8,6 +8,16 @@
 module.exports = {
 
   attributes: {
+    idDeporte:{
+      model:"Deporte"
+    },
+    idNoticias:{
+      model:"Noticias"
+    },
+    urlVideo: {
+      type: 'string',
+      required: true
+    }
 
   }
 };

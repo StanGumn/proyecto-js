@@ -1,3 +1,42 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="brand-centered">
+        <a class="navbar-brand" href="http://www.ecuafutbol.org/web/"><img style="margin-right: 10px; padding: 0;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABIFBMVEX///8AUJ3/zSIjHyDsICkAAAAAACD/zyIRCgySkZEAUqHk4+QkHRnpvCIbNFn/0yIXHyAkGg0GTZfR0NAeGyBBNiB5ICM3NDXd3d2bmppeXFwSEyCMcSFraWkXFiChn6CSdyFyXSElISCDaiH0xSL29vYbGSANDyB8ZCHKoyLRqSIZFBXv7+8dGRpJPSGhgyEAHx8tKSrGxcUACCAMAAVST1ATHyCvjiG7urqqqalwbm8rJiBNSkspJSZFQkNWRyDkICl9e3uEg4MeKDhwHyPXICi6lyJDHyHgtCJBNyAbL0sTO2kNRYEhIy2PHySiICU4HyFnVSANQXhQHyIVOGSvICbIICf5ICo7HyFjHyKHICSmICVYHyLKICc1LSCcfiFC6Dq7AAAP3ElEQVR4nO2d+3uayBrHPZmDQkyaC6beQ2JEkgBJVUzUeKm2mzW7bbfZ3banu23y//8X553hIgoYLwyQPH5+6OMUBL6Zd97LMGAstmbNmjVr1qxZs2bNmjVrVqHG+UQrI3qdI1nL+nSS2hIKk7LG+gLDdNzPn2yzjD+n0OTkEgpjLQb5hKy5SVTSrF8nYFrLCIzFGrJfV6BWXQ4/0Pw6vNxYTmAsU1VXP7kug+Wdh++So7Ord6RazSypMJb0gRYRwjbNY1peRyEWIg8zPpxkWYH+wDOWQrE1LHZyAyFpKWS5cC8ODJUHiA0keRNyfVaLV2Y2oVGUDYVZBlynLMsa04a9RNK34vSBM/MfOCbiDzXPWDQXNbgmhozjgenYmSFupq0mvnZl3CRe0woCDDQEGGkyH1MajCpXc+m0rCIWwW5dGEFw6KH11QH+asNqtiYPjDUprBHBNEaZuLoVyFbT1SL+MKymdarEsDpGK90lChtms0oUymZTjinZnqyqclMssmq1WeNrPNeRkZxOxjoqUjtijLMOTP50xar9wKJ1YEQUpi2wQr6UTveUFRVib0OOoVjDWjH+20Cc3CpObFWSPabag+tjOghkEvvK1CAMacNYG6y3K04f2OtI003cEs0vhYco9Jg2vojMEMZg1hxjmZ6qdon1sqsNotDJMEyvnc3lSMbRJCnokMMdyYGd8kNQyIR9iTpcI9fGf+taI2dARkzWbDUE3BxaTTwUlTZ8Smt4i2iPx6LYbIH/q4KBkmA98SWxbTXxd5ScBRl11ulzot7sLB3ppxAbDBnYLcbE8K4mRHDDahLfU4UPMmoNOT0c26yR4/mmlY5YXzI8pwnxK1bL8JwmGvl7M3Iz5hdiViB/NS5rYJidCfGfLbPF4b+sCE2hp2pgpwL4lmyuaEiNZWwK5Zz1JSxJFKxmkpzWAp8+aZ1e0I+zTMXkM4LG1IRxNw24dnvACeBpBrJMohobsidcGYXJwb8ZVBQ4LiuwA8OXZloMOxCw3wk5oXRDzFjgpmK1yLUmraYeM/l0C/5LYdrkuznGkFjLyV2yf6tm7E5G6eShZ5+JHrxlctV5fI/K4oZa1TNOVi2CifLNtMyQkRQrmrtjEUkvv8Jg/ZzVygWlsDupsIO3ticVdvTPLDIE1RiN7aW7rKxvBsl2zxkRhcsgQEKqe5Sk3mk9wwnmqs88ozGB/JNtG5+VJtcyw3SLrUbVlS72lxd7UAhqzqmiDFLTiyoMqM9FSNeKBHyBGeNzsTggmYbVJEWWAB9IbHfMhvFVFXVdjkKGaNN5FCDXdpntoQOuFEyP8KR3NWaaSF0/RtBwiS87/UrPxa/oPrrnX5I2D00BILlUVjBo4WbGapLrqQlC0ZiTlBFnjkCl2dOn4NIt51HwDrzjKILgV5btP0NrulDrNgZCszWEmsOYppSXnMmNFgPoQ9VQpLIsxER5PA3LZMO+vLkQmzUTbHGK1SKOgWNYJl3zukPAcPj+zMQXMmarGR3DVJrZQYd4DZyejX1Pmnj3VqspKp4T1lBNZif9CsmM0jmuxUcsIRDFTI04Gz7d6TQavS52JNlhMdfopNPVGVPywwax2nSn0SHziTxIEyMmbgJR4ZtcrpPGsxQangFWVXXm/Q9W35ru5QatjBJlaTHdXBtVcCZ2TalUpXKYz0tT5PP5w0olZe9OWWPYXpuL0Pizk6wJRYSn7VVD1iFoqsfj8cObu37/5OTk8hpzC5AP10cnJ/f9/k0JdqnXJVCbMmTiiqMzjJbMTG2YlsEgiTToLyku3VzcFx6vb0fbGwmDnWnMDeXR2e1l4bh/cBivS4ZQldXkbi4avkbhuUZVIz0H/SZJN/3jwvX5drm8YarYmI2hfqNc3h7dHp32D1LxvC5TZtReuxbuTIfID3qMbpeHUuXm4vT6fFQ2u+cJZV5Kt0dnR/0HJOVTxGYZ1G6FVmTxXJXIg66L1++vz7Z1bQsqcxW6cX57+hCvE5UQaIvBJt06SqtL5FXycXR8PSLiVtM2qRMOWL4tPMSlii5yGFjlpJMZVnH2nMrX+4UzGHI+irPJhMOOLu8rRCSrNgL0O8mhirvvUDo4OS/72ncOkQkYmJd9JKXwoodcQLPcIodwQZSX7s/oyrNEJkYFhDtSZopBRMkmguo1JVWOwLFQl2eq3Nm4vogTjRxtU1XajAr6bi7LE/ISLsze6uz8mftAR57366CR7dE1Vb4HBnp4U5jUt5EobztJzNy6XZ6W+NQ+Oxu3FxJ0oypQFFhDkJlJ96Np89x5fDiYprRjbT1ybj14KEweI7F94dznemdil53yI852GHqLcHhsofFrp4HtHEmpaeJjhSfOrSnpZFohqkzvU59UiDWOHqAbjbsCNASChZZGU2fVFeYdZZ9doXMryjsUlhz7SNMKYbeN0zq1XlR6Ksr3t10EBqgQJBbq9nVyfjJgUeXArQdtClOHFi4KbVsP66deCivjQ1y6nC2xcSIhlcZNnQz+o567CrQUpi6OLe4dClP9Y9vmSw+FN/fjfW7dAm4icVehsuQPulA6chdoKZQubRXueKuhEIxux237hMLUXdlWJLueLTHCsd9/hXhoOWKYU6Hb1rFC969PKDzYfjJT2jk+RIzvgT8jo8N7ryu0KXTJWNz70Evh3bZn1mMd8EyiYKZNdkYfmArzjxtlAxeFlfujMY5QZ/XhyDyEl8WAmd6k5AEFhfXbpxSifNzkbHx5li+t5C3i0/ZgeZqUdYgLr9Mlth9ScjEcheNoeO6i0MbhsZdCi0rfU+EIFLafvubF4MFKHyOjMEVhHCbB05yuqNCelq6k8LyOWN/vy4nqjFM6cxo3hamHC4u7gqdC8xCS9+lu60s/JjODLkqVnlJ4WDg3KTsVSrfzRIuHM+sYXr5051FCjP9zbx3Vlkx7KLTFQ9vVLRbx78puMXXydKcQ8f2fJm7LKO6VbjhzmoQt8fJWmBjv5JLT2LZOna5fobF+WtCQPcjNVpjYODolFMBabQon52ASo2Oy0/Eo4aIwcW5sdZx15yGlpv1XWGO8zcypsNyXiLe4synMF87PxsAoS5zFLbfkotDc6kx/biiEQwiIcIlz1BaWwgq53gubQlvGA+SJQiu0uCmsuxt34jxFIVjgZeZq5X7D3UznVGgndbO0wp1bCWk0ivyGmnrwSIYDVljIuz7QuDJFGdWjoRCOrdKY+p7hTHcKcb1ieBwrrOP/kA6wwtN43oGUIgr1rxGFhxL5/webp9G3OhRKiIYrJZOJ7jU8XMxtQWf8F7jU/+MRKzS3TnAEqkYn5OMJjhZl8/9NO7G2TuU2iXIc0XClkHsj79zbGZztUy2ORQpm2mb/mj1H8Dqo0bd1txW5PqB01Erfs+4Ojp1LiY6jwasMUzdPTxNRJwFZaZXOCg2BnSj7whJYhpxt1UdjPcCuxrPMD07hNjga36ehdEQWVTwnFAODUvmrA1nNXeiuBmc0Gq3b+RyLUmEPxMRGv6Ku/gC3B01mxoxiUAoplU46CuOcBQxcIZV5NgucME/U6cGDk3wKs1AmAxlVztwWVgQHLlpkemtqahpC9Xi4VCil3TrJrrPQCx46abdBb/W3Dq0OQ3Nx29C3l1etgEZRoP7CoK0QKSGqw5BMuKGPr0LkXYnONNsY/FKZ/c3w+G0Ldemu3m8xaOvPzf+ExhaiVRuaQOK29VtoCjf/3EMazcWXgJiT0cf90BS+2kIy7YXQWRZtfQirE/c/gpHSXgadCdFMNz/sIZbW2tIxVYgX4QgkRkqxrjDhwjPT/XcltUf/sRIeFL4KReHmh61gXrQIZroVjsJgjJRk33vhmOlH91e9+k5YZkqMlL4nxeCny0MI+jgnpXRHZhpOQ3th5KZ7lG6MOsnIEPQD17f5Z0CeFJOTwzBTMFI1qEfYcQn1e9Bmur+3/FutF0ZkUeldwAI3/95CTHAPPA9AYsAhEWdsC785a3n4wAsMEgwp3Rd1BamoFKivwcEwkIzNRNCC9TWbHxBSOwEKjCVLKNAqkfiZYF+b1ZaDTb8/IsQE+6ITXgsyryH5TJB+BtOA1G0/qE7cfLeFX1wfLE0muBoKz0DJgb+3lNzBCChg4OKe8t0KN/CMVEABYx+R3xgIGoVBpWACBpmfCeP1g5CcBnOTBs90h/JC3owGnRiAws3fAyx9J8kFE/X3cbQP52VYNTaIqE+6MOhob9IIohM38dqEsF7AV2PodyK+Ker/U81zAyOR+l2adyWkBp2wjWlSr/VD7kKyRopyJ+LlJeF1od6J7ygq3Px9j/IKoSfp0O3E/Y8lusvYnqZGdeoUx8KQuxA6UaZ4mwaKCsSE/VMtpBMp1Yl4/okNuwvJg5e06sT9LUR7Fds8ZFgExT4NibguDP8nIGN6nfhqnwIfSkv8yAcNoNhHW3s0QOZv8IRN1refvZ0mjNkZV3z4VV13/H+h15I0Ka1vD36O1BPy68+7voIVhlb4OuGhE3d/vPYTkBjQ8qD54DS0+9d//ePbp6uIRAoTBZzN1R/ffFP4E6Eg1yXMA/6p+d1ffFP4fTfcyt6Nnox2v/vViV+uKD/dtAxJiIlv/vVH4NvdyGQzdnBm89kfO32/G9gavUUQIShevfdD4Jc3KPg7vvOAn2u7+rK6wLefIxYKx3D40b3V7fQ9hMIAVuQvRU+FzGZFf/rtX+xHo2ijGJy8vfljNYW/fKb6WvlV4XCR8XMlhT+wH42ojWI6EPd/rCLwjzcRtlFMBsf9f5Yfij9BoBbt30Qk+enSIePtr7uIjU7Z604bhuLnt0sqfA2Bohq1fHQakVWXHYp6oIhWzeQGCRmfllFIBmFYaxIWIQtD8c2Xxb0NztbkXthXPxdkKC4eFXG21o36INRJpmEo/rWot/kEgzCEBYjLQaqM94vZ6dddir+Q4z84Ki7mbX7uRmoC+GkG7GK14tvPkI5WozR7+BT41QuLeJvvMAgDenrSL5JV8Da/zuttPuFIGL2pp9kQbzPfNPg3UlBEtyb0okkc6jwCv+B7FFGb/50HXA5fzeFQv+L7aNTehEiVIpb45KTGL9iNss9SYEzs4EmNJzJUXBKGuzZvFcQ0xIyrrzMF/vWckjUnSaRCyT8rLH7HyVqwj935Cw8Sd//nPUv8/upZxgk7TbDT3V+9JP7zXGreWeCw6JXcEIHPMRBO0vKU+OllCDQkuhTEn3CYyD3PQDjFUIOY8WNaIk5G5ZchECSSLPytUyCK8A2KxcB3Fq8mxiIeg3KkFsysCDflbl7jircX/vJfH+FgLI5D/wsUqI9FM/S/BhNlGy/IRHUELBF9hUrjOxH4YpzMGBwX0e4XUk0wuRcoECSyeC0xrgeZwYsUiNNwfbn0ixUYi9WQTASGfR0UyaRlNYJr8vxE6cnPd8piPpSoPGCwZs2aNWvWrFmzZs2aNWvs/B+5C+ooZr81/wAAAABJRU5ErkJggg==" alt="FEF">
+        </a>
+      </div>
+
+      <div id="navbar9" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a [routerLink]="['/home']">Home</a></li>
+          <li><a [routerLink]="['/deporte']">Deporte</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>
+<div class="navbar navbar-fixed-bottom">
+  Desarrolado por Molina Angel
+</div>
+
+<router-outlet></router-outlet>
+

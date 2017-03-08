@@ -6,19 +6,22 @@
  */
 
 module.exports = {
-
   attributes: {
-    noticias:{
+    noticias: {
       collection: "Noticias",
-      via:"idDeporte"
+      via: "idDeporte"
     },
-    nombreDeporte:{
-      type:'string',
-      required:true
+    nombreDeporte: {
+      type: 'string',
+      required: true
     },
-    tipoDeporte:{
-      type:'string',
-      required:true
+    galerias: {
+      collection: "Galeria",
+      via: "idDeporte"
+    },
+    videos: {
+      collection: "Galeria",
+      via: "idDeporte"
     }
   }
 };

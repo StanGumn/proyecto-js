@@ -26,6 +26,10 @@ module.exports = {
     galerias:{
       collection: "Galeria",
       via:"idNoticias"
+    },
+    videos:{
+      collection: "Videos",
+      via:"idNoticias"
     }
   }
 };
