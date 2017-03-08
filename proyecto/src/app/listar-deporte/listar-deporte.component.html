@@ -1,0 +1,18 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{title}}</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="container">
+    <div class="text-center">
+      <div class="list-group">
+        <h2 class="glyphicon glyphicon-th-list "> Lista actual de deportes</h2>
+        <div class="col-sm-12 animated flipInX" *ngFor="let deporte of deportes">
+          <a [routerLink]="[deporte.id,'noticias']" class="list-group-item list-group-item-action">{{deporte.nombreDeporte}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

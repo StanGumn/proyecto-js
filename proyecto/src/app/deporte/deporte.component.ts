@@ -36,7 +36,7 @@ export class DeporteComponent implements OnInit {
   crearDeporte(formulario: NgForm) {
     console.log(formulario);
     this.disabledButtons.NuevoDeporteFormSubmitButton = true;
-    this._http.post(this._masterURL.url + "Grupo", {
+    this._http.post(this._masterURL.url + "Deporte", {
       nombreDeporte: formulario.value.nombreDeporte
     }).subscribe(
       (res) => {

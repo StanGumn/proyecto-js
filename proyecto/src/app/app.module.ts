@@ -10,6 +10,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { HomeComponent } from './home/home.component';
 import {routing} from "./app.routes";
 import {MasterUrlService} from "./services/master-url.service";
+import { ListarDeporteComponent } from './listar-deporte/listar-deporte.component';
+import { ListarNoticiasComponent } from './listar-noticias/listar-noticias.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import {MasterUrlService} from "./services/master-url.service";
     DeporteComponent,
     NoticiasComponent,
     GaleriaComponent,
-    HomeComponent
+    HomeComponent,
+    ListarDeporteComponent,
+    ListarNoticiasComponent
   ],
   imports: [
     BrowserModule,
