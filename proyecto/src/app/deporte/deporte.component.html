@@ -5,7 +5,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-12">
       <form class="animated bounceIn" (ngSubmit)="crearDeporte(NuevoDeporteForm)" #NuevoDeporteForm="ngForm">
         <div class="form-group">
           <label>Deporte</label>
@@ -37,7 +37,7 @@
       <div class="row animated flipInY" [hidden]="!deporte.formularioCerrado">
         <div class="col-sm-5">
           <button class="btn btn-block btn-info"
-                  (click)="deporte.formularioCerrado = !grupo.formularioCerrado"
+                  (click)="deporte.formularioCerrado = !deporte.formularioCerrado"
           >Actualizar
           </button>
         </div>
@@ -46,12 +46,12 @@
           <button class="btn btn-block btn-danger" (click)="borrarDeporte(deporte.id)">Borrar</button>
         </div>
         <div class="col-sm-12">
-          <a [routerLink]="[deporte.id,'noticias']">Ir a Noticias</a>
+          <a [routerLink]="[deporte.id,'listar-noticias-deporte']">Ir a Noticias</a>
         </div>
       </div>
       <div class="div" [hidden]="deporte.formularioCerrado">
         <form action="">
-          <form class="animated bounceIn" (ngSubmit)="actualizarDeporte(deporte)" #NuevoGrupoForm="ngForm">
+          <form class="animated bounceIn" (ngSubmit)="actualizarDeporte(deporte)" #NuevoDeporteForm="ngForm">
             <div class="form-group">
               <label>Deporte</label>
               <input required

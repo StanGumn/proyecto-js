@@ -12,6 +12,7 @@ import {routing} from "./app.routes";
 import {MasterUrlService} from "./services/master-url.service";
 import { ListarDeporteComponent } from './listar-deporte/listar-deporte.component';
 import { ListarNoticiasComponent } from './listar-noticias/listar-noticias.component';
+import { ListarNoticiasDeporteComponent } from './listar-noticias-deporte/listar-noticias-deporte.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ListarNoticiasComponent } from './listar-noticias/listar-noticias.compo
     GaleriaComponent,
     HomeComponent,
     ListarDeporteComponent,
-    ListarNoticiasComponent
+    ListarNoticiasComponent,
+    ListarNoticiasDeporteComponent
   ],
   imports: [
     BrowserModule,

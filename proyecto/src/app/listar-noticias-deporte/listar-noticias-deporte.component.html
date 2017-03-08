@@ -1,0 +1,112 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{title}}</h3>
+  </div>
+</div>
+<div class="container">
+  <div class="col-sm-12">
+    <form class="animated bounceIn" (ngSubmit)="crearNoticia(NuevaNoticiaForm)" #NuevaNoticiaForm="ngForm">
+      <div class="form-group">
+        <label>Noticia</label>
+        <input required
+               minlength="4"
+               type="text"
+               class="form-control"
+               placeholder="Ingrese el nombre de la noticia"
+               name="nombreNoticia"
+               [(ngModel)]="nuevaNoticia.nombreNoticia"
+               #nombreNoticia="ngModel"
+               #nombreElm>
+        <textarea required
+                  rows="5"
+                  type="text"
+                  class="form-control"
+                  placeholder="Ingrese la informacion"
+                  name="infoNoticia"
+                  [(ngModel)]="nuevaNoticia.infoNoticia"
+                  #infoNoticia="ngModel"
+                  #nombreElm></textarea>
+        <input required
+               type="date"
+               class="form-control"
+               name="fechaCreacion"
+               [(ngModel)]="nuevaNoticia.fechaCreacion"
+               #fechaCreacion="ngModel"
+               #nombreElm>
+      </div>
+      <button [disabled]="disabledButtons.NuevaNoticiaFormSubmitButton||!NuevaNoticiaForm.valid" type="submit"
+              class="btn btn-block btn-success">Crear
+      </button>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 animated flipInX" *ngFor="let noticia of noticias">
+    <div class="text-center">
+      <h3> Noticia: {{noticia.nombreNoticia}}</h3>
+      <p> Creación: {{noticia.fechaCreacion}}</p>
+      <p> Deporte : {{noticia.idDeporte.nombreDeporte}}</p>
+    </div>
+    <div class="row animated flipInY" [hidden]="!noticia.formularioCerrado">
+      <div class="col-sm-5">
+        <button class="btn btn-block btn-info"
+                (click)="noticia.formularioCerrado = !noticia.formularioCerrado"
+        >Actualizar
+        </button>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5">
+        <button class="btn btn-block btn-danger" (click)="borrarNoticia(noticia.id)">Borrar</button>
+      </div>
+    </div>
+    <div class="div" [hidden]="noticia.formularioCerrado">
+      <form action="">
+        <form class="animated bounceIn" (ngSubmit)="actualizarNoticia(noticia)" #NuevaNoticiaForm="ngForm">
+          <div class="form-group">
+            <label>Noticia</label>
+            <input required
+                   minlength="4"
+                   type="text"
+                   class="form-control"
+                   placeholder="Ingrese el nombre de la noticia"
+                   name="nombreNoticia"
+                   [(ngModel)]="noticia.nombreNoticia"
+                   #nombreNoticia="ngModel"
+                   #nombreElm>
+            <textarea required
+                      rows="5"
+                      type="text"
+                      class="form-control"
+                      placeholder="Ingrese la informacion"
+                      name="infoNoticia"
+                      [(ngModel)]="noticia.infoNoticia"
+                      #infoNoticia="ngModel"
+                      #nombreElm></textarea>
+            <input required
+                   type="date"
+                   class="form-control"
+                   name="fechaCreacion"
+                   [(ngModel)]="noticia.fechaCreacion"
+                   #fechaCreacion="ngModel"
+                   #nombreElm>
+          </div>
+          <button type="submit"
+                  class="btn btn-block btn-success">Update
+          </button>
+          <button type="button"
+                  class="btn btn-block btn-warning"
+                  (click)="noticia.formularioCerrado = !noticia.formularioCerrado"
+          >
+            Cancelar
+          </button>
+        </form>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!--<router-outlet></router-outlet>-->
+
